@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/fa.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">-->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!-- Efecto lightbox -->
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Efecto Scroll -->
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-icon-180x180.png">
+    <link rel="apple-touch-startup-image" href="img/icons/apple-icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/icons/ms-icon-144x144.png">
+    <meta name="apple-mobile-web-app-title" content="ABC Bilingual School">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  </head>
+  <body>
+    
+    <div id="loader-container" class="loader-container">
+      <h2 class="text-center">ABC Bilingial School</h2>
+      <div class="loader-box">
+       
+        <div class="loader">
+          <div class="loader">
+            <div class="loader">
+              <div class="loader">
+          
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header>
+
+      <!-- #####################  BARRA DE INFORMACION  ##################### -->
+      <div class="container-fluid barra-top-info bg-azul">
+        <div class="container-fluid barra-top-info-items py-2">
+          <div class="row no-gutters">
+
+            <div class="col-6 d-flex text-white align-items-center">
+              <div class="icono mr-2 bg-naranja">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <span>89 Av. Nte. y 3a Clle. Pte. #4628 Colonia Escalón, S.S.</span>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row no-gutters">
+
+                <div class="col-7 d-flex text-white align-items-center">
+                  <div class="icono mr-2 bg-naranja">
+                    <i class="far fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span>info1@abcbilingualschool.edu.sv</span>
+                  </div>
+                </div>
+
+                <div class="col-5 d-flex text-white justify-content-end align-items-center">
+                  <div class="icono mr-2 bg-naranja">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <span>2264-0508/7696-9556</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ################################################################## -->
+
+      <!-- #########################  SECCION MENU  ######################### -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-blanco" id="navbar-top">
+        <div class="container">
+  
+          <a class="navbar-brand" href="index.html">
+            <img class="abc-logo" src="img/logos/abc-logo.jpg" alt="ABC Bilingual School El Salvador">
+            <span class="texto-brand">ABC Bilingual School</span>
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> Menu
+          </button>
+            
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+              <li class="nav-item dropdown">
+                <a id="activo" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Conocenos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="conocenos.html">Institución</a>
+                  <a class="dropdown-item activo" href="#">Personal</a>
+                  <a class="dropdown-item" href="vida-estudiantil.html">Vida Estudiantil</a>
+                  <div class="content-lightbox">
+                    <a class="dropdown-item" href="img/menu-cafeteria.jpg">Menú Cafetería</a>
+                  </div>
+                </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Información
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="circulares.html">Circulares</a>
+                  <a class="dropdown-item" href="fechas-importantes.html">Fechas Importantes</a>
+                </div>
+                </li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contactanos</a></li>
+            </ul>
+          </div>
+  
+        </div>
+      </nav>
+  
+      <nav class="navbar navbar-expand-lg navbar-light bg-blanco" id="navbar-fixed">
+          <div class="container">
+  
+            <a class="navbar-brand" href="index.html">
+            <img class="abc-logo" src="img/logos/abc-logo.jpg" alt="ABC Bilingual School El Salvador">
+            <span class="texto-brand">ABC Bilingual School</span>
+          </a>
+  
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavA" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> Menu
+            </button>
+            
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+              <li class="nav-item dropdown">
+                <a id="activo" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Conocenos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="conocenos.html">Institución</a>
+                  <a class="dropdown-item activo" href="#">Personal</a>
+                  <a class="dropdown-item" href="vida-estudiantil.html">Vida Estudiantil</a>
+                  <div class="content-lightbox">
+                    <a class="dropdown-item" href="img/menu-cafeteria.jpg">Menú Cafetería</a>
+                  </div>
+                </div>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Información
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="circulares.html">Circulares</a>
+                  <a class="dropdown-item" href="fechas-importantes.html">Fechas Importantes</a>
+                </div>
+                </li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contactanos</a></li>
+                </ul>
+              </div>
+          </div>
+      </nav>
+      <!-- ################################################################## -->
+
+    </header>
+
+    <main>
+
+      <!-- #######################  SECCION EQUIPO  ######################### -->
+      <section id="equipo" class="container my-section team-section pt-4">
+        <div Class="text-center">
+          <h2 Class="h2 titulo-seccion">Nuestro<span> equipo</span></h2>
+          <p Class="">Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</p>
+        </div>
+
+        <h4 class="my-4 text-center">Personal Administrativo</h4>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_01.jpg" alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Mrs. Verónica Jordan de Pineda</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">PRESIDENTA JUNTA DIRECTIVA</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_02.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Mrs. Valeria W. de Arias</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">DIRECTORA GENERAL</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_03.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Mrs. Margarita S. de Maldonado</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">DIRECTORA ACADÉMICA</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_04.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Mrs. Violeta de Portillo</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">COORDINADORA GENERAL</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_05.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Mrs. Paola Cuéllar de Jule</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">COORDINADORA DE PRIMARIA</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_06.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Mr. Carlos Zavaleta</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">CONTADOR</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+          <div class="col mb-4 animalo">
+            <div class="card h-100">
+              <!--Card image-->
+              <div class="view overlay">
+                <img class="card-img-top" src="img/equipo/ad_07.jpg"
+                  alt="Card image cap">
+                <a href="#!">
+                  <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+        
+              <!--Card content-->
+              <div class="card-body">
+        
+                <!--Title-->
+                <h5 class="card-title text-center h-75">Ms. Elsy de Ramírez</h5>
+                <!--Text-->
+                <p class="card-text text-center h-25">REGISTRO ACADÉMICO</p>
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        
+              </div>
+        
+            </div>
+            <!-- Card -->
+          </div>
+
+        </div>
+
+      </section>
+      <!-- ################################################################## -->
+      
+
+      <!-- #####################  SECCION MENU  BOTTOM   #################### -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light nav-eq">
+        <div class="container justify-content-start">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span> Menu
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link activo" href="#">Administración</a>
+              <a class="nav-item nav-link" href="parvularia.html">parvularia</a>
+              <a class="nav-item nav-link" href="primaria.html">Primaria</a>
+              <a class="nav-item nav-link" href="secundaria.html" >Secundaria</a>
+              <a class="nav-item nav-link" href="aula-de-nivelacion.html" >Aula de Nivelación</a>
+            </div>
+          </div>
+
+        </div>
+
+      </nav>
+      <!-- ################################################################## -->
+
+
+      <!-- ######################  SECCION PARALLAX 2  ###################### -->
+      <section class="ftco-counter jarallax" id="section-counter" style="background-image: url(img/bg_2.jpg);" data-stellar-background-ratio="0.5">
+        <div class="container mt-5">
+          <div class="row justify-content-center mb-5 pb-2">
+            <div class="col-md-8 text-center heading-section heading-section-black animalo mt-5" data-animate-effect="fadeInDown">
+              <h2 class="titulo-seccion mb-4 h1">+35 años de <span>Experiencia</span></h2>
+              <p><strong>they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country</strong></p>
+            </div>
+          </div>	
+          <div class="row d-md-flex align-items-center justify-content-center">
+            <div class="col-lg-10">
+              <div class="row d-md-flex align-items-center">
+                <div class="col-md d-flex justify-content-center counter-wrap animalo">
+                  <div class="block-18">
+                    
+                    <div class="text">
+                      <strong class="number" data-number="35">0</strong>
+                      <span>Personal Capacitado</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap animalo">
+                  <div class="block-18">
+
+                    <div class="text">
+                      <strong class="number" data-number="351">0</strong>
+                      <span>Graduados Exitosos</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap animalo">
+                  <div class="block-18">
+
+                    <div class="text">
+                      <strong class="number" data-number="564">0</strong>
+                      <span>Padres Felices</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md d-flex justify-content-center counter-wrap animalo">
+                  <div class="block-18">
+
+                    <div class="text">
+                      <strong class="number" data-number="30">0</strong>
+                      <span>Reconocimientos</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ################################################################## -->
+
+
+      <!-- ####################   SECTION INSTITUCIONES  #################### -->
+      <section class="container seccion-instituciones py-5">
+        <div class="row">
+  
+          <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="https://www.tboxplanet.com" target="_blank">
+              <img src="img/logos/Logo_t-box.png" alt="" style="height: 60px">
+            </a>
+          </div>
+  
+          <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="https://santillana.com.sv" target="_blank">
+              <img src="img/logos/Logo_Santillana.png" alt="" style="height: 60px">
+            </a>
+          </div>
+  
+          <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="https://www.pearson.com" target="_blank">
+              <img src="img/logos/Logo_Pearson.png" alt="" style="height: 60px">
+            </a>
+          </div>
+  
+          <div class="col-sm-6 col-lg-3 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="http://www.nipsa.org" target="_blank">
+              <img src="img/logos/NIPSA_Logo.png" alt="" style="height: 60px">
+            </a>
+          </div>
+  
+          <div class="col-sm-6 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="https://www.mheducation.com" target="_blank">
+              <img src="img/logos/Logo_McGraw-Hill.jpg" alt="" style="height: 100px">
+            </a>
+          </div>
+  
+          <div class="col-sm-6 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="https://www.afelsalvador.com" target="_blank">
+              <img src="img/logos/Logo_alianza-francesa.png" alt="" style="height: 150px">
+            </a>
+          </div>
+  
+        </div>
+      </section>
+      <!-- ################################################################## -->
+
+    </main>
+
+    <!-- ########################  SECCION FOOTER  ####################### -->
+    <footer>
+      <div class="container-fluid seccion-footer">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-6 col-lg-3 mb-5 animalo">
+              <div class="block-1">
+                <h3 class="block-title">Alguna Pregunta ?</h3>
+                <ul>
+                  <li><span class="icon fas fa-map-marker-alt"></span><span class="text">89 Av. Nte. y 3a Clle. Pte. #4628 Colonia Escalón, S.S.</span></li>
+                  <li><span class="icon fas fa-phone-alt"></span><span class="text">PBX:2264-0508/7696-9556</span></li>
+                  <li><span class="icon far fa-envelope"></span><span class="text">info1@abcbilingualschool.edu.sv</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-5 animalo retardo-1">
+              <div class="block-2">
+                <h3 class="block-title">Ultimas Circulares</h3>
+
+                <div class="mb-3 d-flex">
+
+                  <div class="content-lightbox">
+                    <a href="img/circulares/circular-10.jpg">
+                      <img src="img/circulares/circular-10.jpg" alt="" class="card-img-top">
+                    </a>
+                  </div>
+
+                  <div class="content-info">
+                    <div class="content-lightbox">
+                      <a href="img/circulares/circular-10.jpg">Reestructuración de tareas escolares
+                      </a>
+                    </div>
+                    
+                    <div class="meta mt-2">
+                      <div><a href="#"><i class="icon far fa-calendar-alt"></i> Dec 25, 2018</a></div>
+                      <div><a href="#"><i class="icon fas fa-user-alt"></i> Admin</a></div>
+                      <div><a href="#"><i class="icon far fa-comment-alt"></i> 19</a></div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+                <div class="d-flex">
+
+                  <div class="content-lightbox">
+                    <a href="img/menu-cafeteria.jpg">
+                      <img src="img/menu-cafeteria.jpg" alt="" class="card-img-top">
+                    </a>
+                  </div>
+
+                  <div class="content-info">
+                    <div class="content-lightbox">
+                      <a href="img/menu-cafeteria.jpg">Menú del 9 al 13 de marzo</a>
+                    </div>
+                    <div class="meta mt-2">
+                      <div><a href="#"><i class="icon far fa-calendar-alt"></i> Dec 25, 2018</a></div>
+                      <div><a href="#"><i class="icon fas fa-user-alt"></i> Admin</a></div>
+                      <div><a href="#"><i class="icon far fa-comment-alt"></i> 19</a></div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-5 d-flex justify-content-center animalo retardo-2">
+              <div class="block-3">
+                <h3 class="block-title">Menu</h3>
+
+                <ul class="menu">
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="conocenos.html">Conocenos</a></li>
+                  <li><a href="#equipo">Equipo</a></li>
+                  <li><a href="vida-escolar.html">Vida Escolar</a></li>
+                  <li><a href="contactanos.html">Comtactanos</a></li>
+                </ul>
+
+                <ul class="footer-social list-unstyled float-md-left float-lft mt-3">
+                  <li class="animalo retardo-3">
+                    <a href="https://www.facebook.com/abcbilingualschool" target="_blank">
+                      <span class="fab fa-facebook-f"></span>
+                    </a>
+                  </li>
+                  <li class="animalo retardo-4">
+                    <a href="https://www.instagram.com/abc_bilingual_school" target="_blank">
+                      <span class="fab fa-instagram"></span>
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-5 animalo retardo-5">
+              <div class="block-4 border border-light p-3">
+                  
+                  <div class="text-center">
+                    <p class="h4 mb-4">Subscribete</p>
+                    <p class="text">Subscribete para recibir informacion semanal a tu correo.</p>
+                  </div>
+
+                  <form id ="contact-form" name="contact-form" action="mail.php" method="POST"  onsubmit="return validateForm()" >
+
+                    <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Nombre">
+                    <input type="text" id="email" name="email" class="form-control mb-4" placeholder="Email">
+                    <input type="text" id="subject" name="subject" class="form-control mb-4" value="Subscripcion">
+                    <textarea type="text" id="message" name="message" class="md-textarea mb-4" value="Mensaje">Subscribeme para recibir informacion del colegio</textarea>
+
+                  </form>
+
+                <div class="center-on-small-only">
+                    <a class="btn bg-naranja-op w-100 m-0" onclick="validateForm()">Send</a>
+                </div> <div class="status" id="status"></div>
+                
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 text-center text-copyright">
+                <p Class="animalo retardo-7" data-animate-effect="fadeIn">
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Design4Me | Bootstrap Responsive Web Design.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+    <!-- ################################################################# -->
+ 
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Detiene la animación hasta que llega el scroll -->
+    <script type="text/javascript" src="js/waypoints.js"></script>
+    <!-- Anima los numeros del contador -->
+    <script type="text/javascript" src="js/jquery.animateNumber.min.js"></script>
+    <!-- Efecto lightbox -->
+    <script type="text/javascript" src="js/baguetteBox.min.js"></script>
+    <!-- Your custom scripts (optional) -->
+    <script type="text/javascript" src="js/my-script.js"></script>
+    <script type="text/javascript" src="carga-sw.js"></script>
+
+    <script type="text/javascript">
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 1500,
+        speedAsDuration: true
+      });
+
+      window.onload = function(){
+        var contenedor = document.getElementById('loader-container');
+        contenedor.style.visibility = 'hidden';
+        contenedor.style.opacity = '0';
+      }
+
+      baguetteBox.run('.content-lightbox');
+      
+      new WOW().init();
+
+      $('.jarallax').jarallax({
+        speed: 0.5
+      });
+
+      function validateForm() {
+
+        document.getElementById('status').innerHTML = "Enviando...";
+        formData = {
+          'name'     : $('input[name=name]').val(),
+          'email'    : $('input[name=email]').val(),
+          'subject'  : $('input[name=subject]').val(),
+          'message'  : $('textarea[name=message]').val()
+        };
+
+
+        $.ajax({
+          url : "/mail.php",
+          type: "POST",
+          data : formData,
+          success: function(data, textStatus, jqXHR){
+            $('#status').text(data.message);
+            if (data.code) //If mail was sent successfully, reset the form.
+            $('#contact-form').closest('form').find("input[id=name], input[id=email]").val("");
+            console.log('Aqui estoy');
+          },
+          error: function (jqXHR, textStatus, errorThrown)
+          {
+            $('#status').text(jqXHR);
+          }
+  
+        });
+
+      }
+      
+    </script>
+
+  </body>
+</html>
