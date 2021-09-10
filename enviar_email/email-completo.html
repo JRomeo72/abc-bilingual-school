@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Email Completo</title>
+   
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="../css/mdb.min.css">
+
+    <style>
+        :root{
+            --color-azul: #062d5d;
+            --color-naranja: #fbb802;
+            --color-naranja-op: #fbb902c0;
+
+        }
+
+        .bg-azul, .color-azul{
+            background-color: var(--color-azul);
+        }
+
+        .bg-naranja, .color-naranja{
+            background-color: var(--color-naranja);
+        }
+
+        .bg-naranja-op, .color-claro{
+            background-color: var(--color-naranja-op);
+        }
+
+        body{background-color: var(--color-azul);}
+
+        @font-face {
+            font-family: Coolvetica;
+            src: url(../font/coolvetica/coolvetica_rg.ttf) format("truetype");
+        }
+
+        h3{
+            font-family: "Coolvetica", sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .contenedor {
+            color: var(--color-naranja);
+        }
+
+        .text{
+            color: gray;
+        }
+
+        h3 {
+            color: var(--color-naranja);
+            font-size: 25PX;
+        }
+
+        .btn:hover{
+            background-color: var(--color-naranja);
+        }
+        
+        #marca + div{
+            visibility: hidden;
+        }
+    </style>
+
+  </head>
+  <body>
+
+      <!-- ########################  SECCION FOOTER  ####################### -->
+
+
+    <section class="contenedor">
+        <div class="border border-light m-2 p-3">
+            
+            <div class="text-center">
+                <h3 class="mb-4">Mandanos un E-mail</h3>
+                <p class="text">Dejanos saber tu opinion o consulta y te responderemos lo mas pronto posible.</p>
+            </div>
+
+            <form id ="contact-form" name="contact-form" action="mail.php" method="POST"  onsubmit="return validateForm()" >
+
+                <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Nombre">
+                <input type="text" id="email" name="email" class="form-control mb-4" placeholder="Email">
+                <input type="text" id="subject" name="subject" class="form-control mb-4" placeholder="Asunto">
+                <textarea type="text" id="message" name="message" class="md-textarea form-control mb-4" placeholder="Mensaje" style="height: 100px;"></textarea>
+
+            </form>
+
+            <div class="center-on-small-only">
+                <a class="btn bg-naranja-op w-100 m-0" onclick="validateForm()">Enviar</a>
+            </div> <div class="status" id="status"></div>
+            
+        </div>
+    </section>
+
+      <!-- ################################################################# -->
+ 
+
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+    <script type="text/javascript">
+
+      function validateForm() {
+
+        document.getElementById('status').innerHTML = "Enviando...";
+        formData = {
+          'name'     : $('input[name=name]').val(),
+          'email'    : $('input[name=email]').val(),
+          'subject'  : $('input[name=subject]').val(),
+          'message'  : $('textarea[name=message]').val()
+        };
+
+
+        $.ajax({
+          url : "enviar-email.php",
+          type: "POST",
+          data : formData,
+          success: function(data, textStatus, jqXHR){
+            $('#status').text(data.message);
+            if (data.code) //If mail was sent successfully, reset the form.
+            $('#contact-form').closest('form').find("input[type=text], textarea").val("");
+          },
+          error: function (jqXHR, textStatus, errorThrown)
+          {
+            $('#status').text(jqXHR);
+          }
+  
+        });
+
+      }
+      
+    </script>
+    <div id="marca"></div>
+  </body>
+</html>

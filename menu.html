@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--* Font Awesome -->
+    <link rel="stylesheet" href="css/fa.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">-->
+    <!--* Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--* Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <!--* Efecto lightbox -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!--* Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-notify modal-xl modal-dialog-scrollable modal-azul modal-dialog-centered" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <h4 class="modal-title color-naranja">ABC Bilingual School.</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+        
+                <!--Body-->
+                <div class="modal-body">
+                    <div class="row row-cols-1 d-flex justify-content-center">
+                        <div class="col text-center menu-item">
+                            <img src="./img/menu-items/menu-logo.jpg" class="img-menu-logo" alt="">
+                        </div>
+                        <div class="col text-center menu-item">
+                            <h1 class="menu__titulo">Menú Almuerzo</h1>
+                            <p class="menu__titulo__fecha">Semana  del  23  al  27  de  agosto  2021</p>
+                        </div>
+
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 d-flex justify-content-center">
+                        <div class="col text-center menu-item">
+                            <div class="menu__item__contenedor">
+                                <div class="menu__item__dia">
+                                    <p>Lunes</p>
+                                </div>
+                                <div class="menu__item__plato">
+                                    <p>Alitas a la barbacoa con apio/ zanahoria</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center menu-item">
+                            <div class="menu__item__contenedor">
+                                <div class="menu__item__dia">
+                                    <p>Lunes</p>
+                                </div>
+                                <div class="menu__item__plato">
+                                    <p>Alitas a la barbacoa con apio/ zanahoria</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center menu-item">
+                            <div class="menu__item__contenedor">
+                                <div class="menu__item__dia">
+                                    <p>Lunes</p>
+                                </div>
+                                <div class="menu__item__plato">
+                                    <p>Alitas a la barbacoa con apio/ zanahoria</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center menu-item">
+                            <div class="menu__item__contenedor">
+                                <div class="menu__item__dia">
+                                    <p>Lunes</p>
+                                </div>
+                                <div class="menu__item__plato">
+                                    <p>Alitas a la barbacoa con apio/ zanahoria</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-center menu-item">
+                            <div class="menu__item__contenedor">
+                                <div class="menu__item__dia">
+                                    <p>Lunes</p>
+                                </div>
+                                <div class="menu__item__plato">
+                                    <p>Alitas a la barbacoa con apio/ zanahoria</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4>Todos los platos llevan dos acompañamientos, arroz y ensalada. Refresco natural.</h4>
+                        <h4>Teléfono 2264-0508 Ext. 4.</h4>
+                    </div>
+                </div>
+
+        
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cerrar</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+
+        <!-- # jQuery -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!-- # Bootstrap tooltips -->
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <!-- # Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- # MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- # Detiene la animación hasta que llega el scroll -->
+        <script type="text/javascript" src="js/waypoints.js"></script>
+        <!-- # Efecto Scroll -->
+        <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+        <!-- # Efecto lightbox -->
+        <script type="text/javascript" src="js/lightbox.js"></script>
+        <!-- # Your custom scripts (optional) -->
+        <script type="text/javascript" src="js/my-script.js"></script>
+    <script>
+        window.onload = function () {
+            setTimeout(function(){
+                $('#menuModal').modal('show')
+            }, 100);
+        }
+    </script>
+</body>
+</html>

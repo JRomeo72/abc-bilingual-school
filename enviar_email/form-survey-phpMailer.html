@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Bienvenidos al sitio web de ABC Bilingual School El Salvador, aquí encontraras toda la información acerca de nuestra institución">
+
+        <title>ABC Bilingual School</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!-- Material Design Bootstrap -->
+        <link rel="stylesheet" href="../css/mdb.min.css">
+        
+        <style>
+            #marca + div img{
+                visibility: hidden;
+            }
+        </style>
+
+
+
+
+    </head>
+
+    <body>
+
+
+        <main>
+
+            <div class="container my-5">
+
+                    <!-- Material form contact -->
+                    <div class="card">
+            
+                        <h5 class="card-header white-text text-center py-4" style="background-color: #fbb802;">
+                            <strong>SURVEY FOR VISITORS</strong>
+                        </h5>
+            
+                        <!--Card content-->
+                        <div class="card-body px-lg-5 pt-0">
+                            <p class="mt-3">Dear parent: We ask you to answer the following questions, which are very useful for us. For your cooperation, thank you very much.</p>
+            
+                            <!-- Form -->
+                            <form name="Encuesta" id="Encuesta" class="" style="color: #757575;" action="send-survey.php" method="POST" onsubmit="return validateForm()">
+            
+                                <!-- INFORMACION -->
+                                <div>
+                                    <div class="md-form mt-3">
+                                        <input type="text" id="NombrePadres" name="NombrePadre" class="form-control">
+                                        <label for="NombrePadres">Parent's Name:</label>
+                                    </div>
+    
+                                    <div class="md-form mt-3">
+                                        <input type="text" id="NombreAlumno" name="NombreAlumno" class="form-control">
+                                        <label for="NombreAlumno">Student's name:</label>
+                                    </div>
+    
+                                    <div class="md-form mt-3">
+                                        <input type="text" id="Direccion"  name="Direccion" class="form-control">
+                                        <label for="Direccion">Place of residence:</label>
+                                    </div>
+    
+                                    <div class="row row-cols-1 row-cols-md-2">
+                                        <div class="col md-form mt-0 mb-3">
+                                            <input type="text" id="Telefono" name="Telefono" class="form-control">
+                                            <label for="Telefono" class="pl-3">Phone:</label>
+                                        </div>
+                                        <div class="col md-form mt-0 mb-3">
+                                            <input type="text" id="Celular" name="Celular" class="form-control">
+                                            <label for="Celular" class="pl-3">Mobile:</label>
+                                        </div>
+                                    </div>
+                
+                                    <!-- E-mail -->
+                                    <div class="md-form m-0">
+                                        <input type="email" id="Email" name="Email" class="form-control">
+                                        <label for="Email">E-mail</label>
+                                    </div>
+                                </div>
+
+                                <!-- PREGUNTA No. 1 -->
+                                <div>
+                                    <div class="mt-5 mb-3"><span>1.- How did you hear about our institution?</span></div>
+    
+                                    <div class="row">
+    
+                                        <div class="col-6 col-sm-4 col-md-3 form-check">
+                                            <input type="checkbox" class="form-check-input" value="Referred" id="CheckInput1" name="CheckInput1">
+                                            <label class="form-check-label" for="CheckInput1">Referred</label>
+                                        </div>
+                                        
+                                        <!-- Material inline 2 -->
+                                        <div class="col-6 col-sm-4 col-md-3 form-check">
+                                            <input type="checkbox" class="form-check-input" value="Newspaper" id="CheckInput2" name="CheckInput2">
+                                            <label class="form-check-label" for="CheckInput2">Newspaper</label>
+                                        </div>
+                                        
+                                        <!-- Material inline 3 -->
+                                        <div class="col-6 col-sm-4 col-md-3 form-check">
+                                            <input type="checkbox" class="form-check-input" value="Facebook" id="CheckInput3" name="CheckInput3">
+                                            <label class="form-check-label" for="CheckInput3">Facebook</label>
+                                        </div>
+        
+                                        <!-- Material inline 4 -->
+                                        <div class="col-6 col-sm-4 col-md-3 form-check">
+                                            <input type="checkbox" class="form-check-input" value="Web page" id="CheckInput4" name="CheckInput4">
+                                            <label class="form-check-label" for="CheckInput4">Web page</label>
+                                        </div>
+        
+                                        <!-- Material inline 5 -->
+                                        <div class="col-6 form-check">
+                                            <input type="checkbox" class="form-check-input" value="Yellow Pages" id="CheckInput5" name="CheckInput5">
+                                            <label class="form-check-label" for="CheckInput5">Yellow Pages</label>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="md-form mt-3">
+                                        <input type="text" id="Otros" name="Otros" class="form-control">
+                                        <label for="Otros">Others, specify:</label>
+                                    </div>
+                                </div>
+
+                                <!-- PREGUNTA No. 2 -->
+                                <div>
+                                    <div class="mt-5"><p>2.- Which section are you interested in?</p></div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-6 mb-2">
+                                            <select name="Select_1" class="md-form custom-select m-0" onchange="fill()">
+                                                <option value="" >Select Option</option>
+                                                <option value="Pre School">Pre School</option>
+                                                <option value="Middle School">Middle School</option>
+                                                <option value="High School">High School</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6">
+                                            <select id="Select_2" name="Select_2" class="md-form custom-select m-0">
+                                                <option value="" >--</option>
+                                            </select>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <!-- PREGUNTA No. 3 -->
+                                <div>
+                                    <div class="mt-5"><p>3.- Labor sector to which it belongs?</p></div>
+
+                                    <div class="row">
+
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="Radio_1" name="GrupoRadio" value="Private employee">
+                                                <label class="form-check-label" for="Radio_1">Private employee</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="Radio_2" name="GrupoRadio" value="Public employee">
+                                                <label class="form-check-label" for="Radio_2">Public employee</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-sm-6 col-md-4">
+                                            <div class="form-check">
+                                                <input type="radio" class="form-check-input" id="Radio_3" name="GrupoRadio" value="Own business">
+                                                <label class="form-check-label" for="Radio_3">Own business</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+
+                                <!-- PREGUNTA No. 4 -->
+                                <div class="md-form mt-5">
+                                    <input type="text" id="Colegio" name="Colegio" class="form-control">
+                                    <label for="Colegio">4.- College where you currently study:</label>
+                                </div>
+            
+                                <!-- Send button -->
+                                <div class="text-center">
+                                    <a class="btn btn-outline-info btn-rounded z-depth-0 my-4 waves-effect" onclick="validateForm()">Send</a>
+                                </div><div style="color:red" class="status" id="status"></div>
+            
+                            </form>
+                            <!-- Form -->
+            
+                        </div>
+            
+                    </div>
+                    <!-- Material form contact -->
+
+
+            </div>
+
+
+
+        </main>
+
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="../js/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="../js/mdb.min.js"></script>
+
+        <script type="text/javascript">
+
+            var opt_1 = new Array("Pre-Maternal","Maternal","Pre-Kinder","Kinder","Preparatory");
+            var opt_2 = new Array("1º Grade","2º Grade","3º Grade","4º Grade","5º Grade","6º Grade","7º Grade","8º Grade","9º Grade");
+            var opt_3 = new Array("10º Grade","11º Grade","12º Grade");
+
+            function fill(){
+                var fill;
+                id = document.Encuesta.Select_1.selectedIndex;
+                fill = document.Encuesta.Select_1[id].value;
+
+                if(id!==0){
+                    opt = eval("opt_" + id);
+                    opt_num = opt.length;
+                    document.Encuesta.Select_2.length = opt_num;
+                    console.log(opt);
+                    console.log(opt_num);
+                    console.log(fill);
+
+                    for(i = 0; i < opt_num; i++){
+                        document.Encuesta.Select_2.options[i].value = opt[i];
+                        document.Encuesta.Select_2.options[i].text = opt[i];
+                    }
+                }else{
+                    document.Encuesta.Select_2.length = 1;
+                    document.Encuesta.Select_2.options[0].value = "";
+                    document.Encuesta.Select_2.options[0].text = "--";
+                    
+                }
+                document.Encuesta.Select_2.options[0].selected = "true";
+            }
+            
+
+            function validateForm() {
+
+                var CheckBoxes = "";
+
+                document.getElementById('status').innerHTML = "sending...";
+
+                if(document.getElementById('CheckInput1').checked){
+                    CheckBoxes = document.getElementById('CheckInput1').value;
+                }
+                if(document.getElementById('CheckInput2').checked){
+                    if( CheckBoxes ){
+                        CheckBoxes += ", " + document.getElementById('CheckInput2').value ;
+                    }else{
+                        CheckBoxes = document.getElementById('CheckInput2').value;
+                    }
+                }
+                if(document.getElementById('CheckInput3').checked){
+                    if( CheckBoxes ){
+                        CheckBoxes += ", " + document.getElementById('CheckInput3').value ;
+                    }else{
+                        CheckBoxes = document.getElementById('CheckInput3').value;
+                    }
+                }
+                if(document.getElementById('CheckInput4').checked){
+                    if( CheckBoxes ){
+                        CheckBoxes += ", " + document.getElementById('CheckInput4').value ;
+                    }else{
+                        CheckBoxes = document.getElementById('CheckInput4').value;
+                    }
+                }
+                if(document.getElementById('CheckInput5').checked){
+                    if( CheckBoxes ){
+                        CheckBoxes += ", " + document.getElementById('CheckInput5').value ;
+                    }else{
+                        CheckBoxes = document.getElementById('CheckInput5').value;
+                    }
+                }
+                if(document.getElementById('Otros').value){
+                    if( CheckBoxes ){
+                        CheckBoxes += ", " + document.getElementById('Otros').value;
+                    }else{
+                        CheckBoxes = document.getElementById('Otros').value;
+                    }
+                }
+
+                formData = {
+                    'NombrePadre'  : $('input[name=NombrePadre]').val(),
+                    'NombreAlumno'  : $('input[name=NombreAlumno]').val(),
+                    'Direccion'     : $('input[name=Direccion]').val(),
+                    'Telefono'      : $('input[name=Telefono]').val(),
+                    'Celular'       : $('input[name=Celular]').val(),
+                    'Email'         : $('input[name=Email]').val(),
+                    'CheckInput'    : CheckBoxes,
+                    'Otros'         : $('input[name=Otros]').val(),
+                    'Select_1'      : $('select[name=Select_1]').val(),
+                    'Select_2'      : $('select[name=Select_2]').val(),
+                    'GrupoRadio'    : $('input[name=GrupoRadio]').val(),
+                    'Colegio'      : $('input[name=Colegio]').val(),
+
+                };console.log(formData);
+                
+                $.ajax({
+                    url : "send-survey-phpMailer.php",
+                    type: "POST",
+                    data : formData,
+                    success: function(data, textStatus, jqXHR){
+                        $('#status').text(data.message);
+                        if (data.code) //If mail was sent successfully, reset the form.
+                            $('#Encuesta')[0].reset();
+                            document.Encuesta.Select_2.length = 1;
+                            document.Encuesta.Select_2.options[0].value = "";
+                            document.Encuesta.Select_2.options[0].text = "--";
+                            formData = {};
+
+                        setTimeout(function(){
+                            $('#status').text("");
+                        }, 5000);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown)
+                    {
+                        $('#status').text(jqXHR);
+
+                    }
+        
+                });
+            }
+
+            
+
+        </script>
+
+    <div id="marca"></div>
+    </body>
+</html>

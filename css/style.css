@@ -1,0 +1,913 @@
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*#########################################*/
+/*###########   COLORES BASE   ############*/
+/*#########################################*/
+.bg-azul {
+  background-color: #062d5d;
+}
+
+.color-azul {
+  color: #062d5d;
+}
+
+.bg-naranja {
+  background-color: #fbb802;
+}
+
+.color-naranja {
+  color: #fbb802;
+}
+
+.bg-rojo {
+  background-color: #96110c;
+}
+
+.color-rojo {
+  color: #96110c;
+}
+
+.bg-claro {
+  background-color: #eeeeee;
+}
+
+.color-claro {
+  color: #eeeeee;
+}
+
+.bg-naranja-op {
+  background-color: #fbb802c0;
+}
+
+.bg-blanco {
+  background-color: white;
+}
+
+.sombra {
+  box-shadow: 2px 2px 5px 3px #00000052;
+}
+
+.sombra-l {
+  box-shadow: 4px 4px 8px 5px #00000052;
+}
+
+/*#########################################*/
+/*############   TIPOGRAFIA   #############*/
+/*#########################################*/
+@font-face {
+  font-family: Coolvetica;
+  src: url(../font/coolvetica/coolvetica_rg.ttf) format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2 .h4 {
+  font-family: "Coolvetica", sans-serif;
+  letter-spacing: 1px;
+}
+
+.h1 {
+  font-size: 50px;
+}
+
+.h2 {
+  font-size: 40px;
+}
+
+.parrafo {
+  font-size: 20px;
+}
+
+.titulo-seccion {
+  padding: 30px 0 15px 0;
+  color: #96110c;
+}
+.titulo-seccion span {
+  color: #96110c;
+}
+
+.my-section {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sub-titulo-seccion {
+  color: #fbb802;
+}
+
+.parrafo-seccion {
+  color: #fbb802;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*#########################################*/
+/*########   FORMATO DE ICONOS    #########*/
+/*#########################################*/
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+/*#########################################*/
+/*###########   VENTANA MODAL   ###########*/
+/*#########################################*/
+.modal-dialog.modal-notify.modal-azul .modal-header,
+.modal .modal-footer .btn-azul {
+  background-color: #062d5d;
+}
+
+/*#########################################*/
+/*########### ESTILOS infoModal  ##########*/
+/*#########################################*/
+#infoModal .modal-body img {
+  width: 100px;
+  height: 100px;
+}
+#infoModal .modal-body p {
+  font-weight: 500;
+}
+
+/*#########################################*/
+/*########   ESTILOS BARRA INFO   #########*/
+/*#########################################*/
+.barra-top-info {
+  position: relative;
+  z-index: 4;
+  padding: 0;
+}
+
+.barra-top-info-items {
+  max-width: 1500px;
+}
+.barra-top-info-items .icono {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 1010px) {
+  .barra-top-info span {
+    font-size: 12px;
+  }
+}
+@media (max-width: 810px) {
+  .barra-top-info .icono {
+    font-size: 12px;
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .barra-top-info {
+    display: none;
+  }
+}
+/*#########################################*/
+/*###########   ESTILOS MENU   ############*/
+/*#########################################*/
+.abc-logo {
+  width: 80px;
+}
+
+.texto-brand {
+  font-family: "Coolvetica", sans-serif;
+  font-size: 30px;
+}
+
+@media (max-width: 575px) {
+  .texto-brand {
+    display: none;
+  }
+
+  .abc-logo {
+    width: 60px;
+  }
+}
+#navbar-top {
+  position: relative;
+  z-index: 4;
+  padding: 0 5px;
+}
+
+#navbar-fixed {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: white !important;
+  opacity: 0;
+  z-index: 3;
+  padding: 0 5px;
+}
+
+.navbar-nav .nav-item {
+  margin: 2px;
+}
+.navbar-nav .nav-link {
+  border-radius: 5px;
+  line-height: 30px;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+.navbar-nav .nav-link:hover {
+  background-color: #062d5d;
+  color: #fbb802 !important;
+}
+.navbar-nav .activo {
+  font-weight: 700 !important;
+  color: #fbb802 !important;
+  background-color: #062d5d;
+}
+.navbar-nav .dropdown-item:hover {
+  background-color: #062d5d !important;
+  color: #fbb802 !important;
+}
+
+.navbar #activo {
+  font-weight: 700 !important;
+  color: #fbb802 !important;
+  background-color: #062d5d;
+}
+
+/*#########################################*/
+/*########   ESTILOS MENU BOTTOM   ########*/
+/*#########################################*/
+
+.nav-eq {
+  position: sticky;
+  bottom: 0px;
+  z-index: 1;
+  box-shadow: 0px 0px 8px 3px #11101021;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav-eq.subir {
+  bottom: 38px;
+}
+
+/*#########################################*/
+/*########   ESTILOS ButtoFloat   #########*/
+/*#########################################*/
+.buttonfloat {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  width: 50px;
+  z-index: 5;
+  cursor: pointer;
+}
+.buttonfloat .flag {
+  width: 50px;
+}
+
+/*#########################################*/
+/*#####   ESTILOS Boton Reapertura   ######*/
+/*#########################################*/
+.reapertura {
+  position: fixed;
+  right: 0px;
+  top: 110px;
+  z-index: 5;
+  cursor: pointer;
+  /* line-height: 0;
+  padding: 10px 2px 0px 2px;
+  background-color: #eeeeee;
+  border: solid 1px #000000; */
+}
+
+.reapertura .soon {
+  width: 200px;
+}
+
+/*#########################################*/
+/*#########   ESTILOS CARRUSEL   ##########*/
+/*#########################################*/
+.carousel-item {
+  height: 50vh;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+.texto-carrusel {
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  transform: translateY(-120%);
+  text-align: center;
+  color: cornsilk;
+}
+.texto-carrusel .display-3,
+.texto-carrusel .texto-carrusel-3 .display-3 {
+  font-size: 300%;
+}
+
+.texto-carrusel-3 {
+  position: relative;
+  margin: auto;
+  padding: 30px;
+  transform: translateY(-280%);
+  margin-left: 0;
+  color: cornsilk;
+}
+
+.texto-carrusel .h3,
+.texto-carrusel-3 .h3 {
+  color: white;
+  font-size: 25px;
+}
+
+@media (max-width: 575px) {
+  .texto-carrusel .display-3,
+.texto-carrusel-3 .display-3 {
+    font-size: 180%;
+  }
+
+  .texto-carrusel .h3,
+.texto-carrusel-3 .h3 {
+    font-size: 14px;
+  }
+
+  .texto-carrusel-3 {
+    transform: translateY(-120%);
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .texto-carrusel .display-3,
+.texto-carrusel-3 .display-3 {
+    font-size: 200%;
+  }
+
+  .texto-carrusel .h3,
+.texto-carrusel-3 .h3 {
+    font-size: 15px;
+  }
+
+  .texto-carrusel-3 {
+    transform: translateY(-350%);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .texto-carrusel .display-3,
+.texto-carrusel-3 .display-3 {
+    font-size: 250%;
+  }
+
+  .texto-carrusel .h3,
+.texto-carrusel-3 .h3 {
+    font-size: 20px;
+  }
+
+  .texto-carrusel-3 {
+    transform: translateY(-320%);
+  }
+}
+.animalo {
+  opacity: 0;
+}
+
+/*#########################################*/
+/*####   ESTILOS SECCION INFORMACION   ####*/
+/*#########################################*/
+.services-section {
+  position: relative;
+  z-index: 1;
+}
+
+.services-section a {
+  color: #000000;
+}
+
+.services-section a.link-1:hover,
+.services-section a.link-4:hover {
+  color: #96110c;
+}
+
+.services-section a.link-2:hover,
+.services-section a.link-3:hover {
+  color: #fbb802;
+}
+
+.services-section .icono {
+  width: 120px;
+  height: 120px;
+  font-size: 60px;
+  border-radius: 60px;
+  transform: translateY(-40px);
+}
+
+/*#########################################*/
+/*#####   ESTILOS SECCION CONOCENOS   #####*/
+/*#########################################*/
+.about-us-section .icono {
+  width: 60px;
+  height: 60px;
+  color: #fbb802;
+  font-size: 30px;
+}
+.about-us-section ul {
+  padding: 0;
+}
+.about-us-section ul li {
+  display: block;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.about-us-section ul li span {
+  display: table-cell;
+}
+.about-us-section ul li i {
+  font-size: 20px;
+  font-weight: 500;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #96110c;
+  color: #fbb802;
+  text-align: center;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+/*#########################################*/
+/*#######   ESTILOS SECCION EQUIPO   ######*/
+/*#########################################*/
+#equipo .card {
+  padding-bottom: 10px;
+}
+#equipo .card .card-body {
+  padding: 5px 10px;
+  margin: 0;
+}
+#equipo .card .card-body .card-title {
+  color: #96110c;
+}
+#equipo .card .card-body .card-text {
+  color: #062d5d;
+}
+
+@media (max-width: 575px) {
+  #equipo {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/*#########################################*/
+/*##### ESTILOS SECCION TESTIMONISLES  ####*/
+/*#########################################*/
+#testimoniales {
+  height: 550px;
+}
+#testimoniales .carousel-item {
+  height: 380px;
+  padding-top: 10px;
+}
+#testimoniales .carousel-item .img-box {
+  width: 120px;
+  height: 120px;
+}
+#testimoniales .carousel-item .img-box .imgSvg {
+  mask-image: url(../img/svg/mujer-user.svg);
+  -webkit-mask-image: url(../img/svg/mujer-user.svg);
+  background-color: #062d5d;
+  width: 100px;
+  height: 100px;
+}
+#testimoniales .carousel-item .caption {
+  max-width: 900px;
+  width: 90%;
+}
+#testimoniales .carousel-item .caption h5 {
+  color: #96110c;
+  font-weight: 500;
+}
+#testimoniales .carousel-item .caption p {
+  color: #062d5d;
+  font-weight: 400;
+}
+#testimoniales .carousel-control-prev-icon,
+#testimoniales .carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+}
+#testimoniales .carousel-control-prev-icon {
+  transform: translateX(-30px);
+}
+#testimoniales .carousel-control-next-icon {
+  transform: translateX(30px);
+}
+
+@media (max-width: 767px) {
+  #testimoniales {
+    height: 600px;
+  }
+  #testimoniales .container {
+    max-width: 650px !important;
+  }
+  #testimoniales .carousel-indicators {
+    transform: translateY(50px);
+  }
+}
+@media (max-width: 575px) {
+  #testimoniales {
+    height: 720px;
+  }
+  #testimoniales .carousel-indicators {
+    transform: translateY(70px);
+  }
+}
+/*#########################################*/
+/*######### ESTILOS SECCION FOTOS  ########*/
+/*#########################################*/
+.seccion-fotos, .fotos-item, img {
+  padding: 0;
+  margin: 0;
+}
+
+.seccion-fotos .fotos-item img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*#########################################*/
+/*########### ESTILOS DEL FOOTER  #########*/
+/*#########################################*/
+.seccion-footer {
+  font-size: 14px;
+  background: #062d5d;
+  padding: 6em 0;
+  color: #fbb802;
+}
+.seccion-footer .container {
+  max-width: 1200px;
+  padding-right: 50px;
+  padding-left: 50px;
+  /* BLOCK 1 */
+  /* BLOCK 2 */
+  /* BLOCK 3 */
+  /* BLOCK 4 */
+}
+.seccion-footer .container ul {
+  padding: 0;
+}
+.seccion-footer .container .block-title {
+  margin-bottom: 20px;
+  font-size: 25PX;
+}
+.seccion-footer .container .block-1 span {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.514);
+}
+.seccion-footer .container .block-1 li {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.seccion-footer .container .block-1 li .icon {
+  display: table-cell;
+  width: 25px;
+  color: #fbb802;
+}
+.seccion-footer .container .block-2 img {
+  width: 50px;
+  margin-right: 15px;
+}
+.seccion-footer .container .block-2 a {
+  color: white;
+  font-weight: 400;
+}
+.seccion-footer .container .block-2 a:hover {
+  color: #fbb802;
+}
+.seccion-footer .container .block-2 .meta > div {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.seccion-footer .container .block-2 .meta > div .icon {
+  margin-right: 3px;
+  color: #fbb802;
+}
+.seccion-footer .container .block-2 .meta > div a {
+  margin-right: 3px;
+  color: rgba(255, 255, 255, 0.514);
+}
+.seccion-footer .container .block-3 .menu li {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: white;
+}
+.seccion-footer .container .block-3 .menu li a {
+  color: white;
+}
+.seccion-footer .container .block-3 .menu li a:hover {
+  color: #fbb802;
+  font-weight: 600;
+}
+.seccion-footer .container .block-3 .footer-social li {
+  display: inline-block;
+  /*margin-left: 10px;*/
+  margin-right: 10px;
+}
+.seccion-footer .container .block-3 .footer-social li span {
+  font-size: 20px;
+  color: #fbb802;
+  background-color: rgba(255, 255, 255, 0.11);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+.seccion-footer .container .block-3 .footer-social li span:hover {
+  color: white;
+  background-color: #fbb802;
+}
+.seccion-footer .container .block-4 .text {
+  color: gray;
+}
+.seccion-footer .container .block-4 #contact-form #subject {
+  display: none;
+}
+.seccion-footer .container .block-4 #contact-form textarea {
+  display: none;
+}
+.seccion-footer .container .block-4 .btn:hover {
+  background-color: #fbb802;
+}
+.seccion-footer .container .block-4 .small-form-back {
+  background-position: center;
+}
+.seccion-footer .container .text-copyright {
+  color: gray;
+  font-size: 12px;
+}
+
+/*#########################################*/
+/*#########   ESTILOS V. ESCOLAR   ########*/
+/*#########################################*/
+#vida-escolar .container-fluid {
+  max-width: 1200px;
+}
+#vida-escolar .container-fluid .card {
+  margin-bottom: 100px !important;
+}
+#vida-escolar .container-fluid .card .card-body {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+#vida-escolar .container-fluid .tarjeta-1 .card-body {
+  background-color: #062d5d;
+  color: #fbb802;
+}
+#vida-escolar .container-fluid .tarjeta-2 .card-body {
+  background-color: #96110c;
+  color: #eeeeee;
+}
+#vida-escolar .container-fluid .tarjeta-3 .card-body {
+  background-color: #fbb802;
+  color: #062d5d;
+}
+#vida-escolar .container-fluid .carousel-item .carousel-caption {
+  transform: translateY(-500px);
+  background-color: #062d5d;
+  color: #fbb802;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  #vida-escolar .card .card-body .card-title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  #vida-escolar .card .card-body h5 {
+    font-size: 15px;
+  }
+}
+/*#########################################*/
+/*######### ESTILOS DE CONTACTANOS  #######*/
+/*#########################################*/
+#contactanos {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#contactanos .item i {
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#contactanos .social-icons ul li {
+  display: inline-block;
+  /*margin-left: 10px;*/
+  margin-right: 10px;
+}
+#contactanos .social-icons ul li a span {
+  font-size: 20px;
+  color: #fbb802;
+  background-color: rgba(255, 255, 255, 0.11);
+  /*background: rgba(255, 255, 255, 0.05);*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+#contactanos .social-icons ul li a span:hover {
+  color: white;
+  background-color: #fbb802;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  #contactanos ._email {
+    font-size: 15px;
+  }
+}
+.mapa-y-form .container-fluid {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.mapa-y-form .container-fluid .map-back,
+.mapa-y-form .container-fluid .form-back {
+  background-position: center;
+}
+
+/*#########################################*/
+/*############ ESTILOS OFFLINE  ###########*/
+/*#########################################*/
+#contentMessage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#contentMessage.true {
+  opacity: 1;
+  color: #155724;
+  background-color: #d4edda;
+}
+
+#contentMessage.false {
+  opacity: 1;
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.visible {
+  visibility: visible;
+  /*opacity: 1;
+  height: 100%;
+  transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);*/
+}
+
+.oculto {
+  visibility: hidden;
+  /*opacity: 0;
+  height: 0;*/
+}
+
+.v-offLine {
+  display: none!important;
+}
+
+/*##########   MIS ANIMACIONES   ##########*/
+.animated.retardo-1 {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.animated.retardo-2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.animated.retardo-3 {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.animated.retardo-4 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.retardo-5 {
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+
+.animated.retardo-6 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.animated.retardo-7 {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.animated.retardo-8 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/*!#########################################*/
+/*!############ ESTILOS MODALES  ###########*/
+/*!#########################################*/
+
+/*!######### MODAL MENU CAFETERIA  #########*/
+
+#menuModal .modal-dialog {
+
+  max-width: 1300px;
+}
+
+.menu-item {
+  padding-bottom: 20px;
+}
+
+.img-menu-logo {
+  width: 150px;
+}
+
+.menu__titulo {
+  background-color: #5A070F;
+  width: 350px;
+  padding-bottom: 5px;
+  font-size: 3rem;
+  color: white;
+  margin: auto;
+}
+
+.menu__titulo__fecha {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.menu__item__contenedor {
+  /* background-color: darkorchid; */
+  width: 200px;
+  height: 150px;
+}
+
+.menu__item__dia {
+  background-color: #F59A3C;
+  width: 150px;
+  height: 35px;
+  padding-top: 2px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #040D31;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.menu__item__plato {
+  background-color: #17172B;
+  height: 130px;
+  font-size: 18px;
+  color: white;
+  font-weight: 900;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translateY(-10px);
+}
+
+/*!#########################################*/
+/*!########## MODALES CIRCULARES  ##########*/
+/*!#########################################*/
+
+.img__logo__circulares {
+  width: 100px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
