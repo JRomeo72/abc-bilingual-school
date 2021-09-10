@@ -16,7 +16,7 @@ jobs:
     - name: 📂 FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        server: ftp://ftp.design-2u.com
+        server: ftp.design-2u.com
         username: admin@abcbilingualschool.edu.sv
         password: ${{ secrets.FTP_PASSWORD }}
         port: 21
