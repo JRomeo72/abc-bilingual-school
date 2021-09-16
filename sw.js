@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 const CACHE_NAME = 'ABC_v21.09.16',
-=======
-const CACHE_NAME = 'ABC_v21.09.08-2',
->>>>>>> a8a2f00624b72e0e13530b5d75e42b2fd243b26e
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
