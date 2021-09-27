@@ -21,7 +21,7 @@ Vue.component( 'menucafeteria', {
                         </div>
                         <div class="col text-center menu-item">
                             <h1 class="menu__titulo">Menú Almuerzo</h1>
-                            <p class="menu__titulo__fecha">Semana del 20 al 24 de septiembre 2021.</p>
+                            <p class="menu__titulo__fecha">Semana del 27 de sep. al 1 de oct. 2021.</p>
                         </div>
 
                     </div>
@@ -32,7 +32,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Lunes</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Tacos de Pollo.</p>
+                                    <p>Carne guisada.</p>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Martes</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Lasaña de carne.</p>
+                                    <p>Chaomein de pollo.</p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +52,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Miércoles</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Alitas a la barbacoa.</p>
+                                    <p>Milanesa de res.</p>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +62,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Jueves</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Chuletas a la plancha.</p>
+                                    <p>Enchiladas de pollo.</p>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Viernes</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Sopa de frijoles con carne.</p>
+                                    <p>Hamburguesa con papas.</p>
                                 </div>
                             </div>
                         </div>
