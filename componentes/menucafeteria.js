@@ -21,7 +21,7 @@ Vue.component( 'menucafeteria', {
                         </div>
                         <div class="col text-center menu-item">
                             <h1 class="menu__titulo">Menú Almuerzo</h1>
-                            <p class="menu__titulo__fecha">Semana del 18 al 22 de octubre 2021.</p>
+                            <p class="menu__titulo__fecha">Semana del 25 al 29 de octubre 2021.</p>
                         </div>
 
                     </div>
@@ -32,7 +32,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Lunes</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Lasaña de carne c/ vegetales salteados.</p>
+                                    <p>Chuleta a la plancha.</p>
                                 </div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Martes</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Alitas guisadas.</p>
+                                    <p>Alitas a la barbacoa.</p>
                                 </div>
                             </div>
                         </div>
