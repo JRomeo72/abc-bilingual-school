@@ -96,20 +96,24 @@ Vue.component('equipos',{
 
                 case "parvu" :
                     this.equipos.push (
-                        {"nombre":"Ms. Lisa Reneé García Pineda", "cargo":"GUARDERÍA","position":"Nursery","link":"../img/equipo/pa_Lisa_Renee_Garcia_Pineda.jpg"},
+                        {"nombre":"Ms. Lisa Reneé García Pineda", "cargo":"PREMATERNAL","position":"NURSERY","link":"../img/equipo/pa_Lisa_Renee_Garcia_Pineda.jpg"},
                         {"nombre":"Ms. Marcela Rodríguez", "cargo":"MATERNAL","position":"EARLY CHILDHOOD","link":"../img/equipo/pa_Marcela_Rodriguez.jpg"},
-                        {"nombre":"Ms. Gabriela Mira", "cargo":"PRE KINDER","position":"PREKINDER","link":"../img/equipo/pa_Gabriela_Mira.jpg"},
+                        {"nombre":"Ms. Adriana Somoza", "cargo":"PRE KINDER A","position":"PREKINDER A","link":"../img/equipo/pa_Adriana_Somoza.jpg"},
+                        {"nombre":"Ms. Gabriela Mira", "cargo":"PRE KINDER B","position":"PREKINDER B","link":"../img/equipo/pa_Gabriela_Mira.jpg"},
                         {"nombre":"Mrs. Erika Salinas", "cargo":"KINDER A","position":"KINDER A","link":"../img/equipo/pa_Erika_Salinas.jpg"},
                         {"nombre":"Ms. Adriana Avelar", "cargo":"KINDER B","position":"KINDER B","link":"../img/equipo/pa_Adriana_Avelar.jpg"},
-                        {"nombre":"Ms. Mayra Alas", "cargo":"ASISTENTE DE KINDER B","position":"KINDER ASSISTANT","link":"../img/equipo/pa_Mayra_Alas.jpg"},
                         {"nombre":"Ms. María José Rengifo", "cargo":"PREPARATORIA A","position":"PREPARATORY A","link":"../img/equipo/pa_Maria_Jose_Rengifo.jpg"},
-                        {"nombre":"Ms. Iliana Guzmán", "cargo":"PREPARATORIA B","position":"PREPARATORY B","link":"../img/equipo/pa_Iliana_Guzman.jpg"}
+                        {"nombre":"Ms. Iliana Guzmán", "cargo":"PREPARATORIA B","position":"PREPARATORY B","link":"../img/equipo/pa_Iliana_Guzman.jpg"},
+                        {"nombre":"Ms. Gabriela Araujo", "cargo":"ASIST. DE PRE KINDER A Y B","position":"PREKINDER A & B ASSISTANT","link":"../img/equipo/pa_Gabriela_Araujo.jpg"},
+                        {"nombre":"Ms. Mayra Alas", "cargo":"ASISTENTE DE KINDER A","position":"KINDER A ASSISTANT","link":"../img/equipo/pa_Mayra_Alas.jpg"},
+                        {"nombre":"Ms. Michelle Ayala", "cargo":"ASISTENTE DE KINDER B","position":"KINDER B ASSISTANT","link":"../img/equipo/pa_Michelle_Ayala.jpg"},
+                        {"nombre":"Ms. Gabriela Toledo", "cargo":"ASIST. DE PREPARATORIA A Y B","position":"PREPARATORY A & B ASSISTANT","link":"../img/equipo/pa_Gabriela_Toledo.jpg"}
                     );
                 break;
 
                 case "prima" :
                     this.equipos.push (
-                        {"nombre":"Mrs. Auxiliadora Melhado", "cargo":"1º GRADO A","position":"1st GRADE A","link":"../img/equipo/pr_Auxiliadora_Melhado.jpg"},
+                        // {"nombre":"Mrs. Auxiliadora Melhado", "cargo":"1º GRADO A","position":"1st GRADE A","link":"../img/equipo/pr_Auxiliadora_Melhado.jpg"},
                         {"nombre":"Mrs. Alejandra de Salgado", "cargo":"1º GRADO B","position":"1st GRADE B","link":"../img/equipo/pr_Alejandra_de_Salgado.jpg"},
                         {"nombre":"Mrs. Tatiana de Portillo", "cargo":"2º GRADO A","position":"2nd GRADE A","link":"../img/equipo/pr_Tatiana_de_Portillo.jpg"},
                         {"nombre":"Ms. Valeria Peña", "cargo":"2º GRADO B","position":"2nd GRADE B","link":"../img/equipo/pr_Valeria_Pena.jpg"},
@@ -149,10 +153,11 @@ Vue.component('equipos',{
                         {"nombre":"Ms. Ingrid Aguilera", "cargo":"CICLO IB","position":"LAVEL IB","link":"../img/equipo/an_Ingrid_Aguilera.jpg"},
                         {"nombre":"Mrs. Galia Merino", "cargo":"CICLO IIA","position":"LAVEL IIA","link":"../img/equipo/an_Galia_Merino.jpg"},
                         {"nombre":"Mrs. Ariana Leonor Parrillas Rivera", "cargo":"CICLO IIB","position":"LAVEL IIB","link":"../img/equipo/an_Ariana_Leonor_Parrillas_Rivera.jpg"},
-                        {"nombre":"Ms. Adriana Somoza", "cargo":"CICLO IIB","position":"LAVEL IIB","link":"../img/equipo/an_Adriana_Somoza.jpg"},
+                        
                         {"nombre":"Mrs. Zuleima Navarro de Vigil", "cargo":"CICLO III","position":"LAVEL III","link":"../img/equipo/an_Zuleima_Navarro_de_Vigil.jpg"},
                         // {"nombre":"Ms. Fabiola Peña", "cargo":"PARVULARIA","position":"PARVULARY","link":"../img/equipo/an_06.jpg"},
                         // {"nombre":"Ms. Paola Moreno", "cargo":"AUXILIAR","position":"ASSISTANT","link":"../img/equipo/an_07.jpg"}
+                        {"nombre":"Ms. Eugenia González", "cargo":"ASISTENTE CICLO IB","position":"LAVEL IB ASSISTANT","link":"../img/equipo/an_Eugenia_Gonzalez.jpg"}
                     );
                 break;
             }
