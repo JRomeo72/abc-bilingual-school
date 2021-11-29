@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v21.11.29',
+const CACHE_NAME = 'ABC_v21.11.29.1',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -56,6 +56,7 @@ const CACHE_NAME = 'ABC_v21.11.29',
         '/img/eventos/dic5.jpg',
         '/img/eventos/dic6.jpg',
         '/img/eventos/dic7.jpg',
+        '/img/eventos/dic8.jpg',
         // ! Logos
         '/img/logos/abc-logo.jpg',
         '/img/logos/Logo_McGraw-Hill.jpg',
