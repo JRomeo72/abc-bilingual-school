@@ -96,7 +96,8 @@ Vue.component('equipos',{
 
                 case "parvu" :
                     this.equipos.push (
-                        {"nombre":"Ms. Lisa Reneé García Pineda", "cargo":"PREMATERNAL","position":"NURSERY","link":"../img/equipo/pa_Lisa_Renee_Garcia_Pineda.jpg"},
+                        {"nombre":"Ms. Maira Gutiérrez", "cargo":"PREMATERNAL","position":"NURSERY","link":"../img/equipo/pa_Maira_Gutierrez.jpg"},
+                        // {"nombre":"Ms. Lisa Reneé García Pineda", "cargo":"PREMATERNAL","position":"NURSERY","link":"../img/equipo/pa_Lisa_Renee_Garcia_Pineda.jpg"},
                         {"nombre":"Ms. Marcela Rodríguez", "cargo":"MATERNAL","position":"EARLY CHILDHOOD","link":"../img/equipo/pa_Marcela_Rodriguez.jpg"},
                         {"nombre":"Ms. Adriana Somoza", "cargo":"PRE KINDER A","position":"PREKINDER A","link":"../img/equipo/pa_Adriana_Somoza.jpg"},
                         {"nombre":"Ms. Gabriela Mira", "cargo":"PRE KINDER B","position":"PREKINDER B","link":"../img/equipo/pa_Gabriela_Mira.jpg"},
@@ -105,7 +106,6 @@ Vue.component('equipos',{
                         {"nombre":"Ms. María José Rengifo", "cargo":"PREPARATORIA A","position":"PREPARATORY A","link":"../img/equipo/pa_Maria_Jose_Rengifo.jpg"},
                         {"nombre":"Ms. Iliana Guzmán", "cargo":"PREPARATORIA B","position":"PREPARATORY B","link":"../img/equipo/pa_Iliana_Guzman.jpg"},
                         {"nombre":"Ms. Gabriela Araujo", "cargo":"ASIST. DE PRE KINDER A Y B","position":"PREKINDER A & B ASSISTANT","link":"../img/equipo/pa_Gabriela_Araujo.jpg"},
-                        {"nombre":"Ms. Mayra Alas", "cargo":"ASISTENTE DE KINDER A","position":"KINDER A ASSISTANT","link":"../img/equipo/pa_Mayra_Alas.jpg"},
                         {"nombre":"Ms. Michelle Ayala", "cargo":"ASISTENTE DE KINDER B","position":"KINDER B ASSISTANT","link":"../img/equipo/pa_Michelle_Ayala.jpg"},
                         {"nombre":"Ms. Gabriela Toledo", "cargo":"ASIST. DE PREPARATORIA A Y B","position":"PREPARATORY A & B ASSISTANT","link":"../img/equipo/pa_Gabriela_Toledo.jpg"}
                     );
