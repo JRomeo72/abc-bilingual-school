@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.02.20',
+const CACHE_NAME = 'ABC_v22.02.26',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -41,6 +41,8 @@ const CACHE_NAME = 'ABC_v22.02.20',
         // '/img/equipo/ad_05.jpg',
         '/img/equipo/ad_06.jpg',
         '/img/equipo/ad_07.jpg',
+        'img/circulares/circular-00.jpg',
+        'img/circulares/circular-00.pdf',
         'img/circulares/circular-01.jpg',
         'img/circulares/circular-01.pdf',
         'img/circulares/circular-02.jpg',
@@ -49,12 +51,12 @@ const CACHE_NAME = 'ABC_v22.02.20',
         //!===============================
         // ! IMAGENES FECHAS IMPORTANTES |
         //!-------------------------------
-        '/img/eventos/febrero1.jpg',
-        '/img/eventos/febrero2.jpg',
-        '/img/eventos/febrero3.jpg',
-        '/img/eventos/febrero4.jpg',
-        '/img/eventos/febrero5.jpg',
         '/img/eventos/febrero6.jpg',
+        '/img/eventos/marzo1.jpg',
+        '/img/eventos/marzo2.jpg',
+        '/img/eventos/marzo3.jpg',
+        '/img/eventos/marzo4.jpg',
+        '/img/eventos/marzo5.jpg',
         '/img/eventos/febrero7.jpg',
         // ! Logos
         '/img/logos/abc-logo.jpg',
