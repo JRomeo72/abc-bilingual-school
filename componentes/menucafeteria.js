@@ -72,7 +72,7 @@ Vue.component( 'menucafeteria', {
                                     <p>Viernes</p>
                                 </div>
                                 <div class="menu__item__plato">
-                                    <p>Relleno de guisquil.</p>
+                                    <p>Relleno de güisquil.</p>
                                 </div>
                             </div>
                         </div>
