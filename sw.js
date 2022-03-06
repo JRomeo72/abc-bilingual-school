@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.02.26',
+const CACHE_NAME = 'ABC_v22.03.06',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -51,7 +51,6 @@ const CACHE_NAME = 'ABC_v22.02.26',
         //!===============================
         // ! IMAGENES FECHAS IMPORTANTES |
         //!-------------------------------
-        '/img/eventos/febrero6.jpg',
         '/img/eventos/marzo1.jpg',
         '/img/eventos/marzo2.jpg',
         '/img/eventos/marzo3.jpg',
