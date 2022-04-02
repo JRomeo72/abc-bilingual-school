@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.04.01',
+const CACHE_NAME = 'ABC_v22.04.02',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -191,11 +191,11 @@ const CACHE_NAME = 'ABC_v22.04.01',
 self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(CACHE_NAME)
-        .then(cache => {
-            return cache.addAll(urlsToCache)
-            // .then(() => self.skipWaiting())
-        })
-        .catch(err => console.log('Falló registro de cache', err))
+            .then(cache => {
+                return cache.addAll(urlsToCache)
+                // .then(() => self.skipWaiting())
+            })
+            .catch(err => console.log('Falló registro de cache', err))
     )
     self.skipWaiting()
 })
@@ -206,18 +206,18 @@ self.addEventListener('activate', e => {
 
     e.waitUntil(
         caches.keys()
-        .then(cacheNames => {
-            return Promise.all(
-                cacheNames.map(cacheName => {
+            .then(cacheNames => {
+                return Promise.all(
+                    cacheNames.map(cacheName => {
 
-                    if( cacheName !== cacheWhitelist ) {
-                        return caches.delete( cacheName )
-                    }
-                })
-            )
-        })
-        // Le indica al SW activar el cache actual
-        .then(() => self.clients.claim())
+                        if (cacheName !== cacheWhitelist) {
+                            return caches.delete(cacheName)
+                        }
+                    })
+                )
+            })
+            // Le indica al SW activar el cache actual
+            .then(() => self.clients.claim())
     )
     // self.clients.claim()
 })
@@ -234,7 +234,7 @@ self.addEventListener('fetch', e => {
                     return res
                 }
                 //recupera de la url
-                return fetch( e.request );
+                return fetch(e.request);
 
             })
     )

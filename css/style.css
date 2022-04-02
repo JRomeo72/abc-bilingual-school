@@ -695,6 +695,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 .h4 {
   border-radius: 50px;
 }
 
+.container.instagram-feed {
+  position: relative;
+}
+
+.container.instagram-feed .wall {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  z-index: 100000;
+}
+
 @media (max-width: 600px) {
   #vida-escolar .card .card-body .card-title {
     font-size: 25px;
