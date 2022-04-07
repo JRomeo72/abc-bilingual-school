@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.04.03',
+const CACHE_NAME = 'ABC_v22.04.07',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
