@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.04.07',
+const CACHE_NAME = 'ABC_v22.04.18',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -7,7 +7,6 @@ const CACHE_NAME = 'ABC_v22.04.07',
         '/institucion.html',
         '/institution.html',
         // '/administracion.html',
-        // '/administration.html',
         // '/parvularia.html',
         // '/pre-school.html',
         // '/primaria.html',
