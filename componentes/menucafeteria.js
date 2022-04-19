@@ -21,7 +21,7 @@ Vue.component('menucafeteria', {
                         </div>
                         <div class="col text-center menu-item">
                             <h1 class="menu__titulo">Menú Almuerzo</h1>
-                            <p class="menu__titulo__fecha">Semana del 18 al 22 de abril.</p>
+                            <p class="menu__titulo__fecha">Semana del 18 al 22 de abril de 2022.</p>
                         </div>
 
                     </div>
