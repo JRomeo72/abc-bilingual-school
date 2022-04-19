@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.04.19',
+const CACHE_NAME = 'ABC_v22.04.19-1',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -159,7 +159,7 @@ const CACHE_NAME = 'ABC_v22.04.19',
         '/js/waypoints.js',
         '/carga-sw.js',
         '/manifest.json',
-        //'sw.js',
+        '/sw.js',
         // ! Vue Components ***************
         '/componentes/barra.js',
         '/componentes/buttonfloat.js',
