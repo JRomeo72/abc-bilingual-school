@@ -47,15 +47,15 @@ let widget2 = {
 
                     <a href="" data-toggle="modal" data-target="#menuModal">
                         <template v-if="ingles == 'true'">
-                            Menu from December 6 to 10
+                            Menu from may 2 to 6.
                         </template>
                         <template v-else>
-                            Menú del 6 al 10 de dic.
+                            Menú del 2 al 6 de mayo.
                         </template>
                     </a>
 
                     <div class="meta mt-2">
-                        <div><a href=""><i class="icon far fa-calendar-alt"></i> December 6, 2021</a></div>
+                        <div><a href=""><i class="icon far fa-calendar-alt"></i> May 2, 2022</a></div>
                         <div><a href=""><i class="icon fas fa-user-alt"></i> Admin</a></div>
                         <div><a href=""><i class="icon far fa-comment-alt"></i>19</a></div>
                     </div>
