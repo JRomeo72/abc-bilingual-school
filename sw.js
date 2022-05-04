@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.05.01',
+const CACHE_NAME = 'ABC_v22.05.03',
     urlsToCache = [
         '/',
         // ! Vistas de la Web *************
@@ -52,12 +52,12 @@ const CACHE_NAME = 'ABC_v22.05.01',
         // ! IMAGENES FECHAS IMPORTANTES |
         //!-------------------------------
         '/img/eventos/fechas.jpg',
-        '/img/eventos/abril1.jpg',
-        '/img/eventos/abril2.jpg',
-        '/img/eventos/abril3.jpg',
-        '/img/eventos/abril4.jpg',
-        '/img/eventos/abril5.jpg',
-        '/img/eventos/abril6.jpg',
+        '/img/eventos/mayo-01.jpg',
+        '/img/eventos/mayo-02.jpg',
+        '/img/eventos/mayo-03.jpg',
+        '/img/eventos/mayo-04.jpg',
+        '/img/eventos/mayo-05.jpg',
+        '/img/eventos/mayo-06.jpg',
         // ! Logos
         '/img/logos/abc-logo.jpg',
         '/img/logos/Logo_McGraw-Hill.jpg',
